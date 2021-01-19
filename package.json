@@ -1,0 +1,22 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoannLh/YoannLhostis_3_19022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoannLh/YoannLhostis_3_19022021/issues"
+  },
+  "homepage": "https://github.com/YoannLh/YoannLhostis_3_19022021#readme",
+  "dependencies": {
+    "sass": "^1.32.4"
+  }
+}
