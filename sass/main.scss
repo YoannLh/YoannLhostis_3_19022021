@@ -43,7 +43,7 @@ $primary: rgb(255, 121, 218);
 
 $secondary: rgb(147, 86, 220);
 
-$tertaire: rgb(153, 226, 208);
+$tertiaire: rgb(153, 226, 208);
 
 $grey: rgb(245, 245, 245);
 
@@ -176,7 +176,7 @@ $grey: rgb(245, 245, 245);
 			top: 15px;
 			height: 35px;
 			width: 25%;
-			background: $tertaire;
+			background: $tertiaire;
 			color: black;
 			text-align: center;
 			align-items: center;
@@ -187,10 +187,10 @@ $grey: rgb(245, 245, 245);
 
 @for $y from 1 through 4 {
 	.container-photo__restaurant#{$y} {
-	height: 350px;
-	background: url("../../images/restaurant#{$y}.jpg") no-repeat center;
-	background-size: cover;
-}
+		height: 350px;
+		background: url("../../images/restaurant#{$y}.jpg") no-repeat center;
+		background-size: cover;
+	}
 }
 .main-container {
 	position: relative;
@@ -206,11 +206,18 @@ $grey: rgb(245, 245, 245);
 }
 .menu-elements {
 	margin-top: 40px;
+	.menu-elements__title {
+		width: 11%;
+		padding-bottom: 7px;
+		border-bottom: 3px solid $tertiaire;
+	}
 	.menu-elements__plates {
-		width: 95%;
+		width: 90%;
 		height: 45px;
-		padding: 10px;
-		margin: 20px auto;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 12px 25px 12px 12px;
+		margin: 15px auto;
 		background: white;
 		border-radius: 15px;
 		box-shadow: grey 1px 1px 10px;
@@ -219,7 +226,6 @@ $grey: rgb(245, 245, 245);
 		}
 	}
 }
-
 footer {
 	padding: 17px;
 	flex-direction: column;
@@ -230,7 +236,6 @@ footer {
 	.footer__logo {
 		display: block;
 	}
-
 	.footer__text {
 		display: block;
 	}
