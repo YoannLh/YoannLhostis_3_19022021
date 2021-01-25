@@ -8,6 +8,11 @@ body {
 p {
 	margin: 0;
 }
+a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
 .flex {
 	display: flex;
 }
@@ -26,6 +31,12 @@ p {
 .fa-heart {
 	font-size: 2em;
 	color: grey;
+}
+.fa-arrow-left {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	font-size: 1.5em;
 }
 
 $primary: rgb(255, 121, 218);
@@ -78,20 +89,21 @@ $grey: rgb(245, 245, 245);
 		margin: auto;
 		text-align: center;
 	}
-	.container-presentation__button {
-		display: flex;
-		width: 50%;
-		height: 30px;
-		margin: auto;
-		padding: 13px;
-		background: linear-gradient($primary, $secondary);
-		border-radius: 32px;
+}
+.container-presentation__button {
+	display: flex;
+	width: 50%;
+	height: 30px;
+	margin: auto;
+	padding: 13px;
+	background: linear-gradient($primary, $secondary);
+	border-radius: 32px;
+	box-shadow: grey 1px 1px 10px;
 
-		.container-presentation__button__text {
-			display: block;
-			margin: auto;
-			color: white;
-		}
+	.container-presentation__button__text {
+		display: block;
+		margin: auto;
+		color: white;
 	}
 }
 .container-features {
@@ -169,6 +181,41 @@ $grey: rgb(245, 245, 245);
 			text-align: center;
 			align-items: center;
 			justify-content: center;
+		}
+	}
+}
+
+@for $y from 1 through 4 {
+	.container-photo__restaurant#{$y} {
+	height: 350px;
+	background: url("../../images/restaurant#{$y}.jpg") no-repeat center;
+	background-size: cover;
+}
+}
+.main-container {
+	position: relative;
+	top: -80px;
+	padding: 17px;
+	background: $grey;
+	border-radius: 35px 35px 0 0;
+
+	.main-container__title {
+		margin-top: 20px;
+		justify-content: space-between;
+	}
+}
+.menu-elements {
+	margin-top: 40px;
+	.menu-elements__plates {
+		width: 95%;
+		height: 45px;
+		padding: 10px;
+		margin: 20px auto;
+		background: white;
+		border-radius: 15px;
+		box-shadow: grey 1px 1px 10px;
+		.menu-elements__plates__text {
+			justify-content: space-between;
 		}
 	}
 }
