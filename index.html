@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Ohmyfood</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto:b">
+	<script src="https://kit.fontawesome.com/253fa00d75.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
@@ -15,34 +17,85 @@
 	<main>
 		<div class="container-town container-town--background flex">
 			<div class="container-town--town">
-				<p>V Paris, Belleville</p>
+				<p class="bold"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
 			</div>
 		</div>
 		<div class="container-presentation container-presentation--background flex">
-			<p class="container-presentation__paragraphe">Réservez le menu qui vous convient</p>
-			<p class="container-presentation__paragraphe">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-			<div class="container-presentation__button">Explorez nos restaurants</div>
+			<p class="container-presentation__paragraphe bold veryBigFont">Réservez le menu qui vous convient</p>
+			<p class="container-presentation__paragraphe bigFont">Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.</p>
+			<div class="container-presentation__button">
+				<p class="container-presentation__button__text">Explorer nos restaurants</p>
+			</div>
 		</div>
 		<div class="container-features flex">
-			<p>Fonctionnement</p>
-			<div class="container-features--feature">Choisissez un restaurant</div>
-			<div class="container-features--feature">Composez votre menu</div>
-			<div class="container-features--feature">Dégustez au restaurant</div>
+			<p class="bold bigFont">Fonctionnement</p>
+			<div class="container-features--feature bold">
+				<div class="container-features--feature__number">1</div>
+				<p class="container-features--feature__text"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+			</div>
+			<div class="container-features--feature bold">
+				<div class="container-features--feature__number">2</div>
+				<p class="container-features--feature__text"><i class="fas fa-list-ul"></i>Composez votre menu</p>
+			</div>
+			<div class="container-features--feature bold">
+				<div class="container-features--feature__number">3</div>
+				<p class="container-features--feature__text"><i class="fas fa-store"></i>Dégustez au restaurant</p>
+			</div>
 		</div>
 		<div class="container-restaurants flex">
-			<p>Restaurants</p>
-			<div class="container-restaurants--restaurant flex">resto</div>
-			<div class="container-restaurants--restaurant flex">resto</div>
-			<div class="container-restaurants--restaurant flex">resto</div>
-			<div class="container-restaurants--restaurant flex">resto</div>
+			<p class="bold bigFont">Restaurants</p>
+			<div class="container-restaurants--restaurant flex">
+				<div class="container-restaurant--restaurant1__image">
+					<div class="container-restaurants--restaurant__new"><p>Nouveau</p></div>
+				</div>
+				<div class="container-restaurant--restaurant1__text">
+					<div>
+						<p class="bold">La palette du goût</p>
+						<p>Ménilmontant</p>
+					</div>
+					<div><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="container-restaurants--restaurant flex">
+				<div class="container-restaurant--restaurant2__image">
+					<div class="container-restaurants--restaurant__new"><p>Nouveau</p></div>
+				</div>
+				<div class="container-restaurant--restaurant2__text">
+					<div>
+						<p class="bold">La note enchantée</p>
+						<p>Charonne</p>
+					</div>
+					<div><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="container-restaurants--restaurant flex">
+				<div class="container-restaurant--restaurant3__image"></div>
+				<div class="container-restaurant--restaurant3__text">
+					<div>
+						<p class="bold">À la française</p>
+						<p>Cité Rouge</p>
+					</div>
+					<div><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="container-restaurants--restaurant flex">
+				<div class="container-restaurant--restaurant4__image"></div>
+				<div class="container-restaurant--restaurant4__text">
+					<div>
+						<p class="bold">Le délice des sens</p>
+						<p>Folie-Méricourt</p>
+					</div>
+					<div><i class="far fa-heart"></i></div>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer class="flex">
 		<div class="footer__logo">ohmyfood</div>
-		<p class="footer__text">louloulou</p>
-		<p class="footer__text">louloulou</p>
-		<p class="footer__text">louloulou</p>
-		<p class="footer__text">louloulou</p>
+		<p class="footer__text"><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+		<p class="footer__text"><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+		<p class="footer__text">Mentions légales</p>
+		<p class="footer__text">Contact</p>
 	</footer>
 </body>
 </html>
