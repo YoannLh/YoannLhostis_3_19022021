@@ -1,3 +1,5 @@
+@import "./animationPlate.scss";
+
 body {
 	margin: 0;
 	padding: 0;
@@ -192,6 +194,8 @@ $grey: rgb(245, 245, 245);
 		background-size: cover;
 	}
 }
+
+/* TEMPLATE PAGE */
 .main-container {
 	position: relative;
 	top: -80px;

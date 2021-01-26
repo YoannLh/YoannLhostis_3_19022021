@@ -1,0 +1,65 @@
+
+
+.check {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 20%;
+	background: green;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 500ms;
+}
+
+.menu-elements__plates {
+	overflow: hidden;
+      text-overflow: ellipsis;
+	transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 500ms;
+    &:hover {
+    	.check {
+    		transform: scaleX(1);
+    	}
+    	.price {
+    		transform: translateX(-100%);
+    	}	
+	}
+}
+
+.menu-elements__plates__text__plate-description {
+	display: block;
+	width: 300px;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.price {
+	transform-origin: right;
+	transform: translateX(0%);
+	transition: transform 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
