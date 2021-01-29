@@ -1,46 +1,75 @@
 
 
+$tertiaire: rgb(153, 226, 208);
+
 .check {
 	position: absolute;
+	display: flex;
 	right: 0;
 	top: 0;
 	height: 100%;
 	width: 20%;
-	background: green;
+	background: $tertiaire;
 	transform-origin: right;
 	transform: scaleX(0);
 	transition: transform 500ms;
 }
 
+.price {
+	display: block;
+	width: 20%;
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	transform: translateX(0%);
+	transition: transform 500ms;
+}
+
+.check__cross {
+	position: absolute;
+	right: -153px;
+	top: 23px;
+	display: block;
+	margin: auto;
+	color: white;
+	font-size: 1.8em;
+	transform: rotate(-720deg);
+	transform: translateX(0);
+	transition: all 500ms;
+}
+
 .menu-elements__plates {
 	overflow: hidden;
-      text-overflow: ellipsis;
+    text-overflow: ellipsis;
 	transform-origin: left;
     transform: scaleX(1);
     transition: transform 500ms;
+    .menu-elements__plates__text__plate-description {
+		display: block;
+		width: 300px;
+		white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+	}
     &:hover {
     	.check {
     		transform: scaleX(1);
     	}
     	.price {
-    		transform: translateX(-100%);
+    		transform: translateX(-125%);
+    	}
+    	.check__cross {
+    		transform: translateX(-500%) rotate(720deg);
     	}	
 	}
+	/*&:not(:hover) {
+		.check__cross {
+			transform: rotate(0);
+		}
+    }*/
 }
 
-.menu-elements__plates__text__plate-description {
-	display: block;
-	width: 300px;
-	white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-}
-
-.price {
-	transform-origin: right;
-	transform: translateX(0%);
-	transition: transform 500ms;
-}
 
 
 
