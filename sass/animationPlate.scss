@@ -1,6 +1,79 @@
 
 
 $tertiaire: rgb(153, 226, 208);
+$grey: rgb(245, 245, 245);
+$delay: 1000ms;
+
+.main-container {
+	position: relative;
+	top: -80px;
+	padding: 17px;
+	background: $grey;
+	border-radius: 35px 35px 0 0;
+
+	.main-container__title {
+		margin-top: 20px;
+		justify-content: space-between;
+	}
+}
+.menu-elements {
+	margin-top: 40px;
+	.menu-elements__title {
+		width: 11%;
+		padding-bottom: 7px;
+		border-bottom: 3px solid $tertiaire;
+	}
+	@for $element from 1 through 10 {
+		.menu-elements__plates#{$element} {
+			width: 90%;
+			height: 50px;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 12px 25px 12px 12px;
+			margin: 15px auto;
+			background: white;
+			border-radius: 15px;
+			box-shadow: grey 1px 1px 10px;
+			white-space: nowrap;
+			overflow: hidden;
+  			text-overflow: ellipsis;
+  			transform-origin: left;
+   			transform: scaleX(1);
+    		transition: transform 500ms;
+    		animation: elements $delay;
+			animation-fill-mode: forwards;
+			.menu-elements__plates__text {
+				justify-content: space-between;
+			}
+			.menu-elements__plates__text__plate-description {
+				display: block;
+				width: 300px;
+				white-space: nowrap;
+  				overflow: hidden;
+	  			text-overflow: ellipsis;
+			}
+	    	&:hover {
+    			.check {
+    				transform: scaleX(1);
+    			}
+    			.price {
+    				transform: translateX(-125%);
+    			}
+	  	  		.check__cross {
+    				display: block;
+    				transform: translateX(-500%) rotate(720deg);
+    			}	
+			}
+
+			/*&:not(:hover) {
+				.check__cross {
+					transform: rotate(0);
+				}
+    		}*/
+		}
+		$delay: $delay + 300ms;
+	}
+}
 
 .check {
 	position: absolute;
@@ -28,9 +101,9 @@ $tertiaire: rgb(153, 226, 208);
 
 .check__cross {
 	position: absolute;
+	display: none;
 	right: -153px;
 	top: 23px;
-	display: block;
 	margin: auto;
 	color: white;
 	font-size: 1.8em;
@@ -39,36 +112,17 @@ $tertiaire: rgb(153, 226, 208);
 	transition: all 500ms;
 }
 
-.menu-elements__plates {
-	overflow: hidden;
-    text-overflow: ellipsis;
-	transform-origin: left;
-    transform: scaleX(1);
-    transition: transform 500ms;
-    .menu-elements__plates__text__plate-description {
-		display: block;
-		width: 300px;
-		white-space: nowrap;
-  		overflow: hidden;
-  		text-overflow: ellipsis;
-	}
-    &:hover {
-    	.check {
-    		transform: scaleX(1);
-    	}
-    	.price {
-    		transform: translateX(-125%);
-    	}
-    	.check__cross {
-    		transform: translateX(-500%) rotate(720deg);
-    	}	
-	}
-	/*&:not(:hover) {
-		.check__cross {
-			transform: rotate(0);
-		}
-    }*/
+@keyframes elements {
+    0% {
+    	opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+    	opacity: 1;
+       	transform: translateY(0px);
+    }
 }
+
 
 
 
