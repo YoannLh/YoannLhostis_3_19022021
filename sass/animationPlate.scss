@@ -60,14 +60,13 @@ $delay: 1000ms;
     				transform: translateX(-125%);
     			}
 	  	  		.check__cross {
-    				display: block;
     				transform: translateX(-500%) rotate(720deg);
     			}	
 			}
 
 			/*&:not(:hover) {
 				.check__cross {
-					transform: rotate(0);
+					transform: rotate(-720deg);
 				}
     		}*/
 		}
@@ -101,7 +100,7 @@ $delay: 1000ms;
 
 .check__cross {
 	position: absolute;
-	display: none;
+	display: block;
 	right: -153px;
 	top: 23px;
 	margin: auto;
@@ -115,7 +114,7 @@ $delay: 1000ms;
 @keyframes elements {
     0% {
     	opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(30px);
     }
     100% {
     	opacity: 1;
