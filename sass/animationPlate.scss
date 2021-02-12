@@ -1,5 +1,6 @@
 
-
+$primary: rgb(255, 121, 218);
+$secondary: rgb(147, 86, 220);
 $tertiaire: rgb(153, 226, 208);
 $grey: rgb(245, 245, 245);
 $delay: 1000ms;
@@ -40,18 +41,22 @@ $delay: 1000ms;
 	transform: translateX(0);
 	transition: transform 2500ms;
 }
-
-.check__cross {
+.container--check__cross {
 	position: absolute;
 	display: block;
 	right: -153px;
 	top: 23px;
 	margin: auto;
-	color: white;
-	font-size: 1.8em;
-	transform: rotate(0);
 	transform: translateX(0);
-	transition: rotate(0) 2500ms;
+	transition: transform 2500ms;
+}
+.check__cross {
+	display: block;
+	margin: auto;
+	font-size: 1.8em;
+	color: white;
+	transform: rotate(0);
+	transition: transform 0ms;
 }
 
 .menu-elements {
@@ -102,9 +107,13 @@ $delay: 1000ms;
     			.price {
     				transform: translateX(-1%);
     			}
+    			.container--check__cross {
+    				transform: translateX(-850%);
+    				transition: transform 2500ms;
+    			}
 	  	  		.check__cross {
-	  	  			transition: all 2500ms;
-    				transform: translateX(-500%) rotate(720deg);		
+    				transform: rotate(720deg);	
+    				transition: transform 2500ms;	
     			}	
 			}
 		}
@@ -125,28 +134,39 @@ $delay: 1000ms;
 
 .containerHeart {
 	position: relative;
-	right: 70px;
+	right: 10%;
 	&:hover {
 		.cacheCoeur {
 			height: 0%;
 		}
 		.emptyHeart {
-			opacity: 0.6;
+			opacity: 0;
 		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.containerHeart {
+		right: 5%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.containerHeart {
+		right: 10%;
 	}
 }
 .emptyHeart {
 	position: absolute;
 	color: black;
-	opacity: 0.6;
-	background: $grey;
+	opacity: 1;
+	background: white;
 	z-index: 3;
+	transition: all 300ms;
 }
 .cacheCoeur {
 	position: absolute;
 	height: 32px;
 	width: 32px;
-	background: $grey;
+	background: white;
 	z-index: 2;
 	transform-origin: top;
 	transition: all 300ms;
@@ -155,7 +175,9 @@ $delay: 1000ms;
 .fullHeart {
 	position: absolute;
 	z-index: 2;
-	
+	background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondary));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	transition: all 300ms;
 }
 

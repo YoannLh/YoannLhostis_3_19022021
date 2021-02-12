@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
+	<div class="loadSpinner flex">
+		<div class="loadSpinner-container__logo"></div>
+	</div>
 	<header>
 		<div class="header-container header-container--shadow flex">
 			<img class="header-container__logo" src="images/ohmyfood.png" alt="logo_oh_my_food">
@@ -16,8 +19,10 @@
 	</header>
 	<main>
 		<div class="container-town container-town--background flex">
-			<div class="container-town--town">
-				<p class="bold"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+			<div class="container-town--town flex">
+				<p class="bold">
+					<i class="fas fa-map-marker-alt"></i><p class="bold">Paris, Belleville</p>
+				</p>
 			</div>
 		</div>
 		<div class="container-presentation container-presentation--background flex">
@@ -111,7 +116,9 @@
 		</div>
 	</main>
 	<footer class="flex">
-		<div class="footer__logo">ohmyfood</div>
+		<div class="footer__logo">
+			<img class="footer-container__logo" src="images/ohmyfood.png" alt="logo_oh_my_food">
+		</div>
 		<p class="footer__text"><i class="fas fa-utensils"></i>Proposer un restaurant</p>
 		<p class="footer__text"><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
 		<p class="footer__text">Mentions légales</p>
