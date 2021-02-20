@@ -208,9 +208,10 @@ $delay: 1000ms;
 }
 .containerHeart {
 	position: absolute;
+	display: block;
 	top: 43px;
 	width: 1em;
-	
+	z-index: 9;
 	&:hover {
 		.cacheCoeur {
 			height: 0%;
@@ -220,13 +221,9 @@ $delay: 1000ms;
 		}
 	}
 }
-.containerHeartMainPage {
-	@extend .containerHeart;
-		top: 20px;
-}
 @media screen and (min-width: 1024px) {
 	.containerHeart {
-		right: 8%;
+		right: 7%;
 		&:disabled {
 			background: red;
 		}
@@ -241,6 +238,11 @@ $delay: 1000ms;
 	.containerHeart {
 		right: 10%;
 	}
+}
+.containerHeartMainPage {
+	@extend .containerHeart;
+	cursor: pointer;
+	top: 210px;		
 }
 .emptyHeart {
 	position: absolute;

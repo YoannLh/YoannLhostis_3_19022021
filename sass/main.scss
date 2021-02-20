@@ -187,6 +187,9 @@ $grey: rgb(245, 245, 245);
 		background: white;
 		box-shadow: grey 0px 3px 10px;
 		border-radius: 17px;
+		.container-restaurants--restaurant__link {
+			height: 100%;
+		}
 		@for $i from 1 through 4 {
 			.container-restaurant--restaurant#{$i}__image {
 				position: relative;
