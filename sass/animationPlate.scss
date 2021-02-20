@@ -224,9 +224,6 @@ $delay: 1000ms;
 @media screen and (min-width: 1024px) {
 	.containerHeart {
 		right: 7%;
-		&:disabled {
-			background: red;
-		}
 	}
 }
 @media screen and (max-width: 768px) {
@@ -241,7 +238,6 @@ $delay: 1000ms;
 }
 .containerHeartMainPage {
 	@extend .containerHeart;
-	cursor: pointer;
 	top: 210px;		
 }
 .emptyHeart {
