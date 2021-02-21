@@ -263,6 +263,15 @@ $grey: rgb(245, 245, 245);
 	background: linear-gradient(175deg, $primary, $secondary);
 	border-radius: 32px;
 	box-shadow: grey 0px 3px 10px;
+	@media screen and (min-width: 768px) {
+		width: 25%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 20%;
+	}
+	@media screen and (min-width: 1280px) {
+		width: 15%;
+	}
 	.menu-elements__button__text {
 		display: block;
 		margin: auto;
@@ -279,6 +288,7 @@ footer {
 	flex-direction: column;
 	background: rgb(55, 55, 55);
 	color: white;
+	z-index: 2;
 	.footer__logo {
 		display: block;
 		margin: 13px 0;
@@ -290,10 +300,22 @@ footer {
 	}
 	.fa-utensils {
 		margin-right: 3.4%;
+		@media screen and (min-width: 768px) {
+			margin-right: 2%;
+		}
+		@media screen and (min-width: 1024px) {
+			margin-right: 1.5%;
+		}
 	}
 	.fa-hands-helping {
 		font-size: 0.8em;
 		margin-right: 2.5%;
+		@media screen and (min-width: 768px) {
+			margin-right: 1.5%;
+		}
+		@media screen and (min-width: 1024px) {
+			margin-right: 1.2%;
+		}
 	}
 	.footer__text {
 		display: block;

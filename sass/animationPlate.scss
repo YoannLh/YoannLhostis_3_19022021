@@ -70,7 +70,13 @@ $delay: 1000ms;
 	padding: 17px;
 	background: $grey;
 	border-radius: 35px 35px 0 0;
-
+	z-index: 1;
+	@media screen and (min-width: 768px) {
+		padding: 17px 4%;
+	}
+	@media screen and (min-width: 1024px) {
+		padding: 17px 4%;
+	}
 	.main-container__title {
 		margin-top: 20px;
 		justify-content: space-between;
@@ -122,6 +128,12 @@ $delay: 1000ms;
 		width: 11%;
 		padding-bottom: 7px;
 		border-bottom: 3px solid $tertiaire;
+		@media screen and (min-width: 768px) {
+			width: 5%;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 4%;
+		}
 	}
 	@for $element from 1 through 10 {
 		.menu-elements__plates#{$element} {
@@ -143,6 +155,12 @@ $delay: 1000ms;
     		transition: transform 500ms;
     		animation: elements $delay;
 			animation-fill-mode: forwards;
+			@media screen and (min-width: 768px) {
+				width: 95%;
+			}
+			@media screen and (min-width: 1024px) {
+				width: 96%;
+			}
 			.menu-elements__plate__title {
 				display: block;
 				width: 100%;
