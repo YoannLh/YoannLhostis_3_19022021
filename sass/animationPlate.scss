@@ -66,10 +66,8 @@ $delay: 1000ms;
 }
 .main-container {
 	position: relative;
-	top: -80px;
 	padding: 17px;
 	background: $grey;
-	border-radius: 35px 35px 0 0;
 	z-index: 1;
 	@media screen and (min-width: 768px) {
 		padding: 17px 4%;
@@ -77,9 +75,21 @@ $delay: 1000ms;
 	@media screen and (min-width: 1024px) {
 		padding: 17px 4%;
 	}
-	.main-container__title {
-		margin-top: 20px;
-		justify-content: space-between;
+}
+.container-photo__title {
+	position: absolute;
+	bottom: -1px;
+	height: 20%;
+	width: 100%;
+	justify-content: space-around;
+	background: $grey;
+	border-radius: 35px 35px 0 0;
+	.main-title {
+		margin: 8% auto 0 5%;
+		font-family: "Shrikhand";
+		@media screen and (min-width: 768px) {
+		margin: 2% auto 0 5%;
+	}
 	}
 }
 .check {
@@ -227,7 +237,7 @@ $delay: 1000ms;
 .containerHeart {
 	position: absolute;
 	display: block;
-	top: 43px;
+	top: 38px;
 	width: 1em;
 	z-index: 9;
 	&:hover {
@@ -263,7 +273,7 @@ $delay: 1000ms;
 	color: black;
 	opacity: 1;
 	background: $grey;
-	z-index: 5;
+	z-index: 3;
 	transition: all 300ms;
 }
 .emptyHeartMainPage {
@@ -285,6 +295,7 @@ $delay: 1000ms;
 }
 .fullHeart {
 	position: absolute;
+	width: 1.1em;
 	z-index: 2;
 	background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondary));
 	-webkit-background-clip: text;

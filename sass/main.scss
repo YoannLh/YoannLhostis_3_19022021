@@ -1,5 +1,8 @@
 @import "./animationPlate.scss";
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -42,9 +45,6 @@ a {
 	top: 25px;
 	left: 20px;
 	font-size: 1.5em;
-}
-.main-title {
-	font-family: "Shrikhand";
 }
 $primary: rgb(255, 121, 218);
 $secondary: rgb(147, 86, 220);
@@ -168,9 +168,6 @@ $grey: rgb(245, 245, 245);
 		width: 90% !important;
 	}
 }
-.main-container {
-	z-index: 1;
-}
 .container-restaurants {
 	height: auto;
 	padding: 48px 17px;
@@ -227,6 +224,7 @@ $grey: rgb(245, 245, 245);
 }
 @for $y from 1 through 4 {
 	.container-photo__restaurant#{$y} {
+		position: relative;
 		height: 350px;
 		background: url("../../images/restaurant#{$y}.jpg") no-repeat center;
 		background-size: cover;
