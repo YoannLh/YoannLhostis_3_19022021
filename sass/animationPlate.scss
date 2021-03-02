@@ -51,11 +51,9 @@ $delay: 1000ms;
 @keyframes pageWillDesapear {
     0% {
     	opacity: 0.8;
-    	display: absolute;
     }
     99% {
     	opacity: 0.8;
-    	display: absolute;
     	z-index: 4;
     }
     100% {
