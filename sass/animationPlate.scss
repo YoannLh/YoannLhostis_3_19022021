@@ -175,6 +175,14 @@ $delay: 1000ms;
 				white-space: nowrap;
   				overflow: hidden;
 	  			text-overflow: ellipsis;
+	  			transition: all 500ms;
+			}
+			.menu-elements__plates__title__plate-description {
+				display: block;
+				width: 100%;
+				white-space: nowrap;
+  				overflow: hidden;
+	  			text-overflow: ellipsis;
 			}
 			.menu-elements__plates__text {
 				width: 100%;
@@ -189,6 +197,9 @@ $delay: 1000ms;
 	  			text-overflow: ellipsis;
 			}
 	    	&:hover {
+	    		.menu-elements__plate__title {
+	    			width: 80%;
+	    		}
 	    		.menu-elements__plates__text {
 	    			width: 80%;
 	    		}
