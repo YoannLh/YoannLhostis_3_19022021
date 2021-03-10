@@ -82,12 +82,12 @@ $delay: 1000ms;
 	justify-content: space-around;
 	background: $grey;
 	border-radius: 35px 35px 0 0;
-	.main-title {
-		margin: 8% auto 0 5%;
-		font-family: "Shrikhand";
-		@media screen and (min-width: 768px) {
-		margin: 2% auto 0 5%;
-	}
+		.main-title {
+			margin: 8% auto 0 5%;
+			font-family: "Shrikhand";
+			@media screen and (min-width: 768px) {
+			margin: 2% auto 0 5%;
+		}
 	}
 }
 .check {
