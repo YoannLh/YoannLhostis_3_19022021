@@ -167,7 +167,7 @@ $delay: 1000ms;
 				width: 95%;
 			}
 			@media screen and (min-width: 1024px) {
-				width: 96%;
+				max-width: 50%;
 			}
 			.menu-elements__plate__title {
 				display: block;
