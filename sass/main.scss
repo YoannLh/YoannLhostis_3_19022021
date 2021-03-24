@@ -98,7 +98,6 @@ $grey: rgb(245, 245, 245);
 .container-presentation__button {
 	display: flex;
 	width: 60%;
-	max-width: 1600px;
 	height: 30px;
 	margin: auto;
 	padding: 13px;
@@ -123,6 +122,11 @@ $grey: rgb(245, 245, 245);
 @media screen and (min-width: 1024px) {
 	.container-presentation__button {
 		width: 21%;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.container-presentation__button {
+		width: 15%;
 	}
 }
 .container-features {

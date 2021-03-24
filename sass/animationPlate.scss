@@ -77,19 +77,20 @@ $delay: 1000ms;
 .container-photo__title {
 	position: absolute;
 	bottom: -1px;
-	height: 20%;
+	display: block;
+	height: 60px;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
 	background: $grey;
 	border-radius: 35px 35px 0 0;
-	.main-title {
-		margin: 8% auto 0 5%;
-		font-family: "Shrikhand";
+	.containerTitleAndHearth {
+		position: relative;
+		width: 90%;
 		max-width: 1600px;
 		margin: auto;
-		@media screen and (min-width: 768px) {
-			margin: 2% auto 0 5%;
-		}
+	}
+	.main-title {
+		font-family: "Shrikhand";
 	}
 }
 .check {
@@ -249,8 +250,9 @@ $delay: 1000ms;
 }
 .containerHeart {
 	position: absolute;
+	top: 5%;
+	right: 2%;
 	display: block;
-	top: 38px;
 	width: 1em;
 	z-index: 9;
 	&:hover {
@@ -262,24 +264,22 @@ $delay: 1000ms;
 		}
 	}
 }
-@media screen and (min-width: 1024px) {
-	.containerHeart {
-		right: 7%;
-	}
-}
-@media screen and (max-width: 768px) {
-	.containerHeart {
-		right: 5%;
-	}
-}
-@media screen and (max-width: 414px) {
-	.containerHeart {
-		right: 10%;
-	}
-}
 .containerHeartMainPage {
 	@extend .containerHeart;
-	top: 210px;		
+	top: 210px;	
+	right: 7%;	
+	@media screen and (min-width: 414px) {
+		right: 10%;
+	}
+	@media screen and (min-width: 768px) {
+		right: 5%;
+	}
+	@media screen and (min-width: 1024px) {
+		right: 8%;
+	}
+	@media screen and (min-width: 1280px) {
+		right: 5%;
+	}
 }
 .emptyHeart {
 	position: absolute;
