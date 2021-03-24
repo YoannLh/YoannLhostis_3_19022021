@@ -85,9 +85,11 @@ $delay: 1000ms;
 	.main-title {
 		margin: 8% auto 0 5%;
 		font-family: "Shrikhand";
+		max-width: 1600px;
+		margin: auto;
 		@media screen and (min-width: 768px) {
-		margin: 2% auto 0 5%;
-	}
+			margin: 2% auto 0 5%;
+		}
 	}
 }
 .check {
@@ -132,6 +134,8 @@ $delay: 1000ms;
 }
 .menu-elements {
 	margin-top: 40px;
+	max-width: 1600px;
+	margin: auto;
 	.menu-elements__title {
 		width: 11%;
 		padding-bottom: 7px;
