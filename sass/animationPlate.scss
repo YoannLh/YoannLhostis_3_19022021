@@ -86,7 +86,7 @@ $delay: 1000ms;
 	.containerTitleAndHearth {
 		position: relative;
 		width: 90%;
-		max-width: 1600px;
+		max-width: 1400px;
 		margin: auto;
 	}
 	.main-title {
@@ -135,7 +135,7 @@ $delay: 1000ms;
 }
 .menu-elements {
 	margin-top: 40px;
-	max-width: 1600px;
+	max-width: 1400px;
 	margin: auto;
 	.menu-elements__title {
 		width: 11%;
@@ -250,8 +250,8 @@ $delay: 1000ms;
 }
 .containerHeart {
 	position: absolute;
-	top: 5%;
-	right: 2%;
+	top: 12%;
+	right: 3%;
 	display: block;
 	width: 1em;
 	z-index: 9;
