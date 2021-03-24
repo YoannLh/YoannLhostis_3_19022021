@@ -8,6 +8,7 @@ $delay: 1000ms;
 .loadSpinner {
 	position: absolute;
 	width: 100%;
+	height: 1893px;
 	background: $grey;
 	opacity: 0.8;
 	z-index: 4;
@@ -27,14 +28,14 @@ $delay: 1000ms;
 		animation: SpinnerIsloading 6000ms;	
 	}
 }
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 500px) {
 	.loadSpinner {
-		height: 2465px;
+		height: 2460px;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
 	.loadSpinner {
-		height: 2546px;
+		height: 2460px;
 	}
 }
 @keyframes SpinnerIsloading {
@@ -67,30 +68,26 @@ $delay: 1000ms;
 	background: $grey;
 	z-index: 1;
 	@media screen and (min-width: 768px) {
-		padding: 17px 20%;
+		padding: 17px 4%;
 	}
 	@media screen and (min-width: 1024px) {
-		padding: 17px 20%;
+		padding: 17px 4%;
 	}
 }
 .container-photo__title {
 	position: absolute;
 	bottom: -1px;
-	display: block;
-	height: 60px;
+	height: 20%;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: space-around;
 	background: $grey;
 	border-radius: 35px 35px 0 0;
 	.main-title {
-		margin: 5% auto 5% 5%;
+		margin: 8% auto 0 5%;
 		font-family: "Shrikhand";
-		@media screen and (min-width: 414px) {
-			margin: 2% auto 0% 5%;
-		}
 		@media screen and (min-width: 768px) {
-			margin: 1% auto 5% 20%;
-		}
+		margin: 2% auto 0 5%;
+	}
 	}
 }
 .check {
@@ -166,8 +163,11 @@ $delay: 1000ms;
     		transition: transform 500ms;
     		animation: elements $delay;
 			animation-fill-mode: forwards;
+			@media screen and (min-width: 768px) {
+				width: 95%;
+			}
 			@media screen and (min-width: 1024px) {
-				width: 100%;
+				width: 96%;
 			}
 			.menu-elements__plate__title {
 				display: block;
@@ -215,13 +215,13 @@ $delay: 1000ms;
     					transform: translateX(-610%);
 					}
 					@media (min-width: 768px) {
-    					transform: translateX(-640%);
+    					transform: translateX(-710%);
 					}
 					@media (min-width: 1024px) {
-    					transform: translateX(-700%);
+    					transform: translateX(-790%);
 					}
 					@media (min-width: 1280px) {
-    					transform: translateX(-750%);
+    					transform: translateX(-870%);
 					}
     			}
 	  	  		.check__cross {
@@ -246,8 +246,7 @@ $delay: 1000ms;
 .containerHeart {
 	position: absolute;
 	display: block;
-	top: 24%;
-	right: 22%;
+	top: 38px;
 	width: 1em;
 	z-index: 9;
 	&:hover {
@@ -259,39 +258,24 @@ $delay: 1000ms;
 		}
 	}
 }
-@media screen and (min-width: 414px) {
-	.containerHeart {
-		right: 10%;
-	}
-}
-@media screen and (min-width: 768px) {
-	.containerHeart {
-		top: 24%;
-		right: 22%;
-	}
-}
 @media screen and (min-width: 1024px) {
 	.containerHeart {
-		top: 41%;
-		right: 19%;
+		right: 7%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.containerHeart {
+		right: 5%;
+	}
+}
+@media screen and (max-width: 414px) {
+	.containerHeart {
+		right: 10%;
 	}
 }
 .containerHeartMainPage {
 	@extend .containerHeart;
-	top: 210px;	
-	right: 7%;	
-	@media screen and (min-width: 414px) {
-		right: 10%;
-	}
-	@media screen and (min-width: 768px) {
-		right: 5%;
-	}
-	@media screen and (min-width: 1024px) {
-		right: 8%;
-	}
-	@media screen and (min-width: 1280px) {
-		right: 5%;
-	}
+	top: 210px;		
 }
 .emptyHeart {
 	position: absolute;
